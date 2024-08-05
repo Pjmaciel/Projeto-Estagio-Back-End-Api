@@ -15,6 +15,8 @@ gem 'paranoia', '~> 2.4'
 gem 'active_storage_validations'
 gem 'rspec-rails', '~> 4.0.2'
 gem 'jwt', '~> 2.2'
+gem 'cpf_cnpj'
+gem 'bcrypt', '~> 3.1.7'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
