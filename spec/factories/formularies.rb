@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :formulary do
-    nome { "Formulary 1" }
+    sequence(:nome) { |n| "Formulary #{n}" }
   end
 end

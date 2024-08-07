@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :answer do
-    content { "Resposta 1" }
+    sequence(:content) { |n| "Sample Answer #{n}" }
     formulary
     question
     visit
-    answered_at { DateTime.now }
+    answered_at { Time.now }
   end
 end
