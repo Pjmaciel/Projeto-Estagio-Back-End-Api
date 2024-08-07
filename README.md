@@ -128,6 +128,11 @@ Para executar os testes, use o comando:
 rspec
 ```
 
+Para Testar o funcionamento da API com o Postman:
+```sh
+https://documenter.getpostman.com/view/28918911/2sA3rzLYpD
+```
+
 ## Autenticação JWT
 
 A API utiliza JWT para autenticação de usuário. O token é validado para verificar se o usuário está logado e tem permissões de acesso.
