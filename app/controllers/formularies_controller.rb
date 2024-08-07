@@ -30,6 +30,7 @@ class FormulariesController < ApplicationController
 
   def destroy
     @formulary.destroy
+    head :no_content
   end
 
   private
@@ -39,6 +40,6 @@ class FormulariesController < ApplicationController
   end
 
   def formulary_params
-    params.require(:formulary).permit(:name)
+    params.require(:formulary).permit(:nome)
   end
 end
