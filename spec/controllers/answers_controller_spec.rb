@@ -4,7 +4,7 @@ require 'rails_helper'
 RSpec.describe AnswersController, type: :controller do
   let(:formulary) { FactoryBot.create(:formulary) }
   let(:question) { FactoryBot.create(:question) }
-  let(:visit) { FactoryBot.create(:visit) }
+  let(:visit) { FactoryBot.create(:visit, date: Date.tomorrow) } # Garantir que a data seja no futuro
   let(:valid_attributes) { { content: "Sample Answer", formulary_id: formulary.id, question_id: question.id, visit_id: visit.id, answered_at: Time.now } }
   let(:invalid_attributes) { { content: nil, formulary_id: nil, question_id: nil, visit_id: nil, answered_at: nil } }
   let(:answer) { FactoryBot.create(:answer) }

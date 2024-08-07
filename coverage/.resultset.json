@@ -247,7 +247,7 @@
       },
       "/home/pjmaciel/Desktop/projects/Projeto-Estagio-Back-End-Api/app/controllers/application_controller.rb": {
         "lines": [
-          null,
+          1,
           1,
           1,
           null,
@@ -262,16 +262,15 @@
           null,
           0,
           null,
+          0,
+          null,
           null,
           null
         ]
       },
-      "/home/pjmaciel/Desktop/projects/Projeto-Estagio-Back-End-Api/app/controllers/concerns/json_web_token.rb": {
+      "/home/pjmaciel/Desktop/projects/Projeto-Estagio-Back-End-Api/app/lib/json_web_token.rb": {
         "lines": [
-          null,
           1,
-          1,
-          null,
           1,
           null,
           1,
@@ -280,8 +279,6 @@
           null,
           null,
           1,
-          1,
-          null,
           1,
           1,
           null,
@@ -369,6 +366,6 @@
         ]
       }
     },
-    "timestamp": 1722990409
+    "timestamp": 1722996032
   }
 }

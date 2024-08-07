@@ -1,6 +1,7 @@
 # spec/spec_helper.rb
-require 'bundler/setup'
+
 require 'simplecov'
+require 'bundler/setup'
 require 'rspec'
 
 SimpleCov.start do
