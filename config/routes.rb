@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :users, except: [:new, :edit]
-  resources :visits, except: [:new, :edit]
-  resources :formularies, except: [:new, :edit]
-  resources :questions, except: [:new, :edit]
-  resources :answers, except: [:new, :edit]
+  resources :users
+  resources :visits
+  resources :formularies
+  resources :questions
+  resources :answers
 
   post 'auth/login', to: 'auth#login'
   post 'auth/logout', to: 'auth#logout'
