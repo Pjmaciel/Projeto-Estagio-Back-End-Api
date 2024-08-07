@@ -1,8 +1,7 @@
-# spec/factories/questions.rb
 FactoryBot.define do
   factory :question do
-    name { "Pergunta 1" }
+    sequence(:name) { |n| "Question #{n}" }
     formulary
-    question_type { "Texto" }
+    question_type { "type" }
   end
 end
