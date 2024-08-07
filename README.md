@@ -133,8 +133,3 @@ rspec
 A API utiliza JWT para autenticação de usuário. O token é validado para verificar se o usuário está logado e tem permissões de acesso.
 
 
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
----
