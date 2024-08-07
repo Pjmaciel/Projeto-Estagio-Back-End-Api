@@ -1,8 +1,8 @@
-# app/controllers/application_controller.rb
 class ApplicationController < ActionController::API
-  include JsonWebToken
-
   before_action :authorize_request
+  attr_reader :current_user
+
+  private
 
   def authorize_request
     header = request.headers['Authorization']
@@ -10,7 +10,9 @@ class ApplicationController < ActionController::API
     begin
       @decoded = JsonWebToken.decode(header)
       @current_user = User.find(@decoded[:user_id])
-    rescue JsonWebToken::InvalidToken => e
+    rescue ActiveRecord::RecordNotFound => e
+      render json: { errors: e.message }, status: :unauthorized
+    rescue StandardError => e
       render json: { errors: e.message }, status: :unauthorized
     end
   end
