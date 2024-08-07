@@ -13,10 +13,12 @@ gem "puma", ">= 5.0"
 
 gem 'paranoia', '~> 2.4'
 gem 'active_storage_validations'
-gem 'rspec-rails', '~> 4.0.2'
 gem 'jwt', '~> 2.2'
 gem 'cpf_cnpj'
 gem 'bcrypt', '~> 3.1.7'
+gem 'jwt', '~> 2.2'
+gem 'devise'
+
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -49,6 +51,14 @@ group :development, :test do
   gem 'faker'
   gem 'shoulda-matchers', '~> 4.0'
   gem 'database_cleaner-active_record'
+  gem 'simplecov', '~> 0.21.2'
+  gem 'simplecov-rcov', '~> 0.2.3'
+  gem 'rspec-rails', '~> 6.1.2'
+  gem 'rspec', '~> 3.13.0'
+  gem 'rspec-core', '~> 3.13.0'
+  gem 'rspec-expectations', '~> 3.13.0'
+  gem 'rspec-mocks', '~> 3.13.0'
+  gem 'rspec-support', '~> 3.13.0'
 end
 
 group :development do
