@@ -30,6 +30,7 @@ class AnswersController < ApplicationController
 
   def destroy
     @answer.destroy
+    render json: { message: 'Answer deleted successfully' }, status: :ok
   end
 
   private

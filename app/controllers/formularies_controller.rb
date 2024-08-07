@@ -30,7 +30,7 @@ class FormulariesController < ApplicationController
 
   def destroy
     @formulary.destroy
-    head :no_content
+    render json: { message: 'Formulary deleted successfully' }, status: :ok
   end
 
   private
